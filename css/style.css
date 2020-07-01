@@ -1,0 +1,260 @@
+body {
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.inner, .header-inner, .content-inner, .progress-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  background-color: #eaeaea;
+  padding-top: 36px;
+  padding-bottom: 41px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #494949;
+  font-size: 0.85em;
+  font-weight: 700;
+  margin-left: 1em;
+}
+
+.nav__link:hover {
+  color: red;
+}
+
+.nav__link::after {
+  content: "";
+  width: 2px;
+  height: 16px;
+  background: #494949;
+  margin-left: 12px;
+}
+
+.nav__link:nth-child(1)::before {
+  content: "";
+  width: 2px;
+  height: 16px;
+  background: #494949;
+  margin-right: 12px;
+}
+
+.nav__btn {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .nav__link {
+    width: 40%;
+    padding-bottom: 10px;
+    padding-left: 0;
+  }
+  .nav__link::after {
+    display: none;
+  }
+  .nav__link:nth-child(1)::before {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__logo {
+    display: none;
+  }
+}
+
+.content {
+  background-image: url(../img/main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.content-left {
+  max-width: 600px;
+}
+
+.content__title {
+  color: #fff;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.content__text {
+  color: #fff;
+  font-size: 1.25em;
+  margin-bottom: 30px;
+}
+
+.content__btn {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  padding: 0.5em 1.5em;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 900px) {
+  .content {
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  .content-left {
+    max-width: 90%;
+    text-align: center;
+  }
+  .content__img {
+    display: none;
+  }
+}
+
+.progress {
+  background-color: #eaeaea;
+  text-align: center;
+  padding-top: 125px;
+  padding-bottom: 85px;
+}
+
+.progress__title {
+  color: #282828;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.progress__subtitle {
+  color: #959595;
+  font-size: 1.25em;
+}
+
+.progress__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #494949;
+  font-size: 0.85em;
+  font-weight: 700;
+  padding-left: 40px;
+}
+
+.progress-block__number {
+  font-size: 6em;
+  margin-right: 30px;
+  line-height: 0px;
+}
+
+.progress-block__title {
+  font-size: 1.25em;
+  line-height: 0px;
+}
+
+.progress-block__text {
+  font-size: 0.85em;
+}
+
+.progress-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.progress__img {
+  width: 80%;
+  max-width: 469px;
+  border: 2px solid red;
+}
+
+@media (max-width: 900px) {
+  .progress {
+    padding-top: 25px;
+    padding-bottom: 15px;
+  }
+  .progress-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 700px) {
+  .progress-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .progress__link {
+    padding-left: 0;
+    padding-bottom: 20px;
+  }
+}
+
+.footer {
+  text-align: center;
+  background-image: url(../img/main.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer__title {
+  color: #ffffff;
+  font-size: 0.85em;
+}
+/*# sourceMappingURL=style.css.map */

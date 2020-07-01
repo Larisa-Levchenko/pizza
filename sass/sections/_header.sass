@@ -1,0 +1,52 @@
+.header
+    background-color: #eaeaea
+    padding-top: 36px
+    padding-bottom: 41px    
+    &-inner
+        @extend .inner
+.nav
+    display: flex    
+    &__link
+        display: flex    
+        align-items: center
+        text-decoration: none
+        text-transform: uppercase
+        color: #494949
+        font-size: 0.85em
+        font-weight: 700
+        margin-left: 1em
+        &:hover
+            color: red
+        &::after                    
+            content: ""
+            width: 2px
+            height: 16px
+            background: #494949
+            margin-left: 12px        
+        &:nth-child(1)::before            
+            content: ""
+            width: 2px
+            height: 16px
+            background: #494949
+            margin-right: 12px          
+                  
+    &__btn
+        display: none
+@media (max-width: 900px)
+    .nav        
+        flex-wrap: wrap
+        justify-content: space-around
+        &__link
+            width: 40%
+            padding-bottom: 10px
+            padding-left: 0
+            &::after   
+                display: none
+            &:nth-child(1)::before    
+                display: none
+
+@media (max-width: 500px)
+    .header__logo
+        display: none
+
+	

@@ -1,0 +1,39 @@
+.content
+    background-image: url(../img/main.png)
+    background-position: center
+    background-repeat: no-repeat
+    background-size: cover
+    padding-top: 100px
+    padding-bottom: 130px
+    &-inner
+        @extend .inner
+    &-left
+        max-width: 600px
+    &__title
+        color: #fff
+        font-size: 2.5em
+        font-weight: 700
+    &__text
+        color: #fff
+        font-size: 1.25em
+        margin-bottom: 30px        
+    &__btn       
+        text-decoration: none
+        color: #fff        
+        font-weight: 700  
+        padding: 0.5em 1.5em
+        border: 2px solid #fff
+@media (max-width: 900px)
+    .content        
+        padding-top: 20px
+        padding-bottom: 50px
+        &-left
+            max-width: 90%
+            text-align: center
+        &__img
+            display: none
+        
+
+    
+
+    
